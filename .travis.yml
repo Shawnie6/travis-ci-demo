@@ -1,0 +1,6 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t shawnie86/travis-demo -f Dockerfile.dev .
